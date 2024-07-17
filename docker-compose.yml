@@ -7,8 +7,15 @@ services:
       - "80:80"
       - "443:443"
     restart: unless-stopped
+    volumes:
+      - data:/data
+      - config:/config
     networks:
       - proxy
+
+volumes:
+  data:
+  config:
 
 networks:
   proxy:
