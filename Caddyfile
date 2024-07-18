@@ -32,3 +32,12 @@ dev.evlogbook.com, evlogbook.com {
 		</html>
 		HTML 200
 }
+
+dev.evlogbook.com/.well-known/appspecific/com.tesla.3p.public-key.pem {
+	respond <<TEXT
+		-----BEGIN PUBLIC KEY-----
+		MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQghUw+/oGQMMicjOuXELs1zABK1y
+		DxfuGlsZfsMLwf0lTtQFmSqmTFb6oO2bf4tg3XPiznHBcvmutgNRjM1D4g==
+		-----END PUBLIC KEY-----
+		TEXT 200
+}
